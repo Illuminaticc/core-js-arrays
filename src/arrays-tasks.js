@@ -121,7 +121,9 @@ function getStringsLength(arr) {
  */
 function getAverage(arr) {
   const s = arr.reduce((a, b) => a + b);
-  return s / arr.length;
+  const av = s / arr.length;
+
+  return Math.round(av * 100) / 100 || 0;
 }
 
 /**
